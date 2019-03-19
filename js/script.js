@@ -39,7 +39,7 @@ const appendPageLinks = (list) => {
    const div = document.createElement('div');
    const ul = document.createElement('ul');
 
-   div.className = 'pagination'; // give the div the “pagination” class
+   div.className = 'pagination'; // give the div the pagination class
    classPage.appendChild(div); // append div to .page
    div.appendChild(ul); //Add a ul to the “pagination” div to store the pagination links
 
@@ -145,12 +145,12 @@ const searchStudents = () => {
          classPage.removeChild(links);
       }
    }
-   //list for keyup event on the input form
+   //for keyup event on the input form
    input.addEventListener('keyup', () => {
       filter();
    });
 
-   //list for click event on the button
+   //for click event on the button
    button.addEventListener('click', () => {
       filter();
    });
