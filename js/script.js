@@ -48,6 +48,9 @@ const appendPageLinks = (list) => {
       const li = document.createElement('li');
       ul.appendChild(li);
       const a = document.createElement('a');
+      if (i === 0) {
+          a.setAttribute("class", "active");
+}
       a.textContent = 1 + i;
       a.href = '#';
       li.appendChild(a);
